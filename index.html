@@ -65,7 +65,7 @@
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
             <h2>Select Position</h2>
             <ul>
                 <li><label><input type="radio" name="position" value="SW"> SW</label></li>
@@ -80,15 +80,105 @@
                 <li><label><input type="radio" name="position" value="STC"> ST C</label></li>
             </ul>
         </div>
-        <div class="col-md-4">
-          <h2>Filter</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
+		<div class="col-md-9">
+			<h2>Filter</h2>
+			<form>
+				<fieldset>
+						<legend>Select desired instructions</legend>
+						<h3>Possession</h3>
+						<div>
+							<label for="HoldUpBall">Hold Up Ball</label>
+							<select id = "HoldUpBall" name="HoldUpBall">
+								<option disabled selected> Choose a role from above </option>
+							</select>
+						</div>
+						<div>
+							<label for="Shooting">Shooting</label>
+							<select id = "Shooting" name="Shooting">
+								<option disabled selected> Choose a role from above </option>
+							</select>
+						</div>
+						<div>
+							<label for="Dribbling">Dribbling</label>
+							<select id = "Dribbling" name="Dribbling">
+								<option disabled selected> Choose a role from above </option>
+							</select>
+						</div>
+						<div>
+							<label for="DribbleDirection">Dribble Direction</label>
+							<select id = "DribbleDirection" name="DribbleDirection">
+								<option disabled selected> Choose a role from above </option>
+							</select>
+						</div>
+						<h3>Distribution</h3>
+						<div>
+							<label for="PassLength">Pass Length</label>
+							<select id = "PassLength" name="PassLength">
+								<option disabled selected> Choose a role from above </option>
+							</select>
+						</div>
+						<div>
+							<label for="RiskyPass">Risky Pass</label>
+							<select id = "RiskyPass" name="RiskyPass">
+								<option disabled selected> Choose a role from above </option>
+							</select>
+						</div>
+						<div>
+							<label for="CrossFrequency">Cross Frequency</label>
+							<select id = "CrossFrequency" name="CrossFrequency">
+								<option disabled selected> Choose a role from above </option>
+							</select>
+						</div>
+						<div>
+							<label for="CrossFrom">Cross From</label>
+							<select id = "CrossFrom" name="CrossFrom">
+								<option disabled selected> Choose a role from above </option>
+							</select>
+						</div>
+						<h3>Movement</h3>
+						<div>
+							<label for="RunForward">Run Forward</label>
+							<select id = "RunForward" name="RunForward">
+								<option disabled selected> Choose a role from above </option>
+							</select>
+						</div>
+						<div>
+							<label for="WidePlay">Wide Play</label>
+							<select id = "WidePlay" name="WidePlay">
+								<option disabled selected> Choose a role from above </option>
+							</select>
+						</div>
+						<div>
+							<label for="MoveIntoChannels">Move Into Channels</label>
+							<select id = "MoveIntoChannels" name="MoveIntoChannels">
+								<option disabled selected> Choose a role from above </option>
+							</select>
+						</div>
+						<div>
+							<label for="RoamFromPosition">Roam From Position</label>
+							<select id = "RoamFromPosition" name="RoamFromPosition">
+								<option disabled selected> Choose a role from above </option>
+							</select>
+						</div>
+						<h3>Defending</h3>
+						<div>
+							<label for="Pressing">Pressing</label>
+							<select id = "Pressing" name="Pressing">
+								<option disabled selected> Choose a role from above </option>
+							</select>
+						</div>
+						<div>
+							<label for="Tackling">Tackling</label>
+							<select id = "Tackling" name="Tackling">
+								<option disabled selected> Choose a role from above </option>
+							</select>
+						</div>
+				</fieldset>
+			</form>
+		</div>
+        <div class="col-md-12">
           <h2>Results</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <div id="results"></div>
         </div>
       </div>
 
